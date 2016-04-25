@@ -15,15 +15,15 @@ var classArray = [
   "Sion",
   "Thomas",
   "Tracey",
-  "Virginia",
+  "Ginni",
   "Zach",
   "Zeng"];
 
-var teamNames = ['Mongeese', 'Mongo Mayhem', 'Document Doctors', 'FindByTeamName()', 'Query Crushers', 'Mon-Go-Go'];
+var teamNames = ['Team 1', 'Team 2', 'Team 3', 'Team 4', 'Team 5', 'Team 6'];
 
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex ;
-  
+
   // While there remain elements to shuffle...
   while (0 !== currentIndex) {
 
@@ -123,7 +123,7 @@ $(document).ready(function() {
 		selectedNumber = 11;
 		$(this).addClass('selected');
 	});
-	
+
 	$('#randomButton').on('click', function(){
 		if(!selectedNumber){
 			alert("You need to select a group size!");

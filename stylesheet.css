@@ -42,7 +42,7 @@ p{
 	width: auto;
 	margin: 5px;
 	padding: 10px;
-	height: 200px;
+	/*height: 200px;*/
 	display: block;
 	float: left;
 	background-color: #ccc;

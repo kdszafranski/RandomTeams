@@ -1,0 +1,53 @@
+p{
+	font-size: 24px;
+}
+
+.numberButton {
+	background-color: #BBBBBB;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	border-radius: 10px;
+	font-size: 24px;
+	padding-top: 6px;
+	display: inline-block;
+
+}
+
+.customGlyph {
+	width: 215px;
+	margin-top: 4px;
+	padding-top: 8px;
+}
+
+.numberButton:hover {
+	background-color: #DDDDDD;
+}
+
+.numberButton:active {
+	background-color: #666666;
+	color: #FFFFFF;
+}
+
+.selected {
+	background-color: #555555;
+	color: #FFFFFF;
+}
+
+.groupContainer {
+	margin: 0 auto;
+}
+
+.group {
+	width: auto;
+	margin: 5px;
+	padding: 10px;
+	height: 200px;
+	display: block;
+	float: left;
+	background-color: #ccc;
+}
+
+.group h2 {
+	margin-top: 1px;
+}

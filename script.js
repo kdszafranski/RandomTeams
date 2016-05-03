@@ -19,7 +19,10 @@ var classArray = [
   "Zach",
   "Zeng"];
 
-var teamNames = ['Team 1', 'Team 2', 'Team 3', 'Team 4', 'Team 5', 'Team 6'];
+// Can be left blank if no instructions are required
+var instructions = 'Your team name is also your starting git branch name';
+
+var teamNames = ['black-widow', 'captain-america', 'hawkeye', 'hulk', 'ironman', 'thor'];
 
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex ;
@@ -129,6 +132,8 @@ $(document).ready(function() {
 			alert("You need to select a group size!");
 			return;
 		}
+
+    $('#instructions').append('<h2>' + instructions + '</h2>');
 
 		$('.groupContainer').empty();
 

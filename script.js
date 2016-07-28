@@ -1,28 +1,32 @@
+// Update with student names
 var classArray = [
   "Adam",
-  "Anne",
-  "Anthony",
-  "Brandon",
-  "Daniel",
-  "Glyde",
-  "Hannah",
+  "Corey",
+  "Dave",
+  "Denny",
+  "Drew",
+  "Harry",
+  "Jackie",
+  "Jake",
+  "Jerry",
   "Joe",
-  "Logan",
-  "Noah",
-  "Patrick",
-  "Quinn",
-  "Samantha",
-  "Sion",
-  "Thomas",
-  "Tracey",
-  "Ginni",
-  "Zach",
-  "Zeng"];
+  "Josh",
+  "Keri",
+  "Kim",
+  "Liz Haak",
+  "Liz Puhl",
+  "Mat",
+  "Nick",
+  "Ray",
+  "Theresa",
+  "Tyler",
+  "Will"
+];
 
 // Can be left blank if no instructions are required
-var instructions = 'Your team name is also your starting git branch name';
+var instructions = 'STI Calculator Challenge';
 
-var teamNames = ['black-widow', 'captain-america', 'hawkeye', 'hulk', 'ironman', 'thor'];
+var teamNames = ["JavaScript Junkies", "While Loop Wizards", "The Constructors", "Functionarma", "Sultans of Switches"];
 
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex ;
@@ -67,6 +71,7 @@ function resetSelected(){
 }
 
 $(document).ready(function() {
+  $('#numStudents').text('(' + classArray.length + ' students)');
 	$('#two').on('click', function(){
 		resetSelected();
 		selectedNumber = 2;
@@ -132,7 +137,7 @@ $(document).ready(function() {
 			alert("You need to select a group size!");
 			return;
 		}
-
+    $('#instructions').empty();
     $('#instructions').append('<h2>' + instructions + '</h2>');
 
 		$('.groupContainer').empty();

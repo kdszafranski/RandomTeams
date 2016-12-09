@@ -1,32 +1,36 @@
 // Update with student names
 var classArray = [
-  "Adam",
-  "Corey",
-  "Dave",
-  "Denny",
-  "Drew",
-  "Harry",
-  "Jackie",
-  "Jake",
-  "Jerry",
+  "Alex",
+  "Andrew F",
+  "Andy W",
   "Joe",
-  "Josh",
-  "Keri",
-  "Kim",
-  "Liz Haak",
-  "Liz Puhl",
-  "Mat",
-  "Nick",
-  "Ray",
-  "Theresa",
-  "Tyler",
-  "Will"
+  "Hien",
+  "Jake",
+  "Michael",
+  "Jason",
+  "Oliver",
+  "Phil",
+  "Liz",
+  "Steve",
+  "Casey",
+  "Jeff",
+  "Isaac",
+  "Brian",
+  "Chris",
+  "Emily"
 ];
 
 // Can be left blank if no instructions are required
-var instructions = 'STI Calculator Challenge';
+var instructionsHeader = 'Stand Up Groups';
+// appended wholesale below
+var instructionsBody = '<ol>' +
+  '<li>What did you accomplish yesterday?</li>' +
+  '<li>What are you working on today?</li>' +
+  '<li>Do you have any blockers?</li>' +
+  '</ol>';
 
-var teamNames = ["JavaScript Junkies", "While Loop Wizards", "The Constructors", "Functionarma", "Sultans of Switches"];
+// Sigma Order: ghost > goblin > skeleton > poltergeist > mummy > vampire > (ghost again)
+var teamNames = ['Luke', 'Kris', 'Huck'];
 
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex ;
@@ -138,7 +142,8 @@ $(document).ready(function() {
 			return;
 		}
     $('#instructions').empty();
-    $('#instructions').append('<h2>' + instructions + '</h2>');
+    $('#instructions').append('<h2>' + instructionsHeader + '</h2>');
+    $('#instructions').append(instructionsBody);
 
 		$('.groupContainer').empty();
 

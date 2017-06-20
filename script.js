@@ -1,23 +1,25 @@
 // Update with student names
 var classArray = [
-  "Alex",
-  "Andrew F",
-  "Andy W",
-  "Joe",
-  "Hien",
-  "Jake",
-  "Michael",
-  "Jason",
-  "Oliver",
-  "Phil",
-  "Liz",
-  "Steve",
-  "Casey",
-  "Jeff",
-  "Isaac",
-  "Brian",
-  "Chris",
-  "Emily"
+  "Alec",
+  "Alecia",
+  "Amanda",
+  "Anne",
+  "Antonio",
+  "Ben H",
+  "Ben S",
+  "Brendin",
+  "Cat",
+  "Chase",
+  "David",
+  "Dexter",
+  "Dillon",
+  "Emily",
+  "James",
+  "Miles",
+  "Peter",
+  "Nicole",
+  "Ted",
+  "Tom"
 ];
 
 // Can be left blank if no instructions are required

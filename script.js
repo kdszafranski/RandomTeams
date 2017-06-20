@@ -21,16 +21,12 @@ var classArray = [
 ];
 
 // Can be left blank if no instructions are required
-var instructionsHeader = 'Stand Up Groups';
+var instructionsHeader = 'Awesome Challenge!';
 // appended wholesale below
-var instructionsBody = '<ol>' +
-  '<li>What did you accomplish yesterday?</li>' +
-  '<li>What are you working on today?</li>' +
-  '<li>Do you have any blockers?</li>' +
-  '</ol>';
+var instructionsBody = 'Follow the Readme file on the repo.';
 
 // Sigma Order: ghost > goblin > skeleton > poltergeist > mummy > vampire > (ghost again)
-var teamNames = ['Luke', 'Kris', 'Huck'];
+var teamNames = ['Team 1', 'Team 2', 'Team 3'];
 
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex ;

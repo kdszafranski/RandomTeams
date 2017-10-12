@@ -1,34 +1,31 @@
 // Update with student names
 var classArray = [
-  "Alec",
-  "Alecia",
-  "Amanda",
-  "Anne",
-  "Antonio",
-  "Ben H",
-  "Ben S",
-  "Brendin",
-  "Cat",
-  "Chase",
-  "David",
-  "Dexter",
-  "Dillon",
-  "Emily",
-  "James",
-  "Miles",
-  "Peter",
-  "Nicole",
-  "Ted",
-  "Tom"
+	'Kevin',
+	'Elvis',
+	'Josh',
+	'Holly',
+	'Alex',
+	'Aaron',
+	'Laura',
+	'David',
+	'Blaze',
+	'Marta',
+	'Emma',
+	'Zack',
+	'Emi',
+	'Xong', 
+	'Hanna',
+	'Sarah',
+	'Jaffa',
 ];
 
 // Can be left blank if no instructions are required
-var instructionsHeader = 'Awesome Challenge!';
+var instructionsHeader = 'Randome Number Guessing Game';
 // appended wholesale below
 var instructionsBody = 'Follow the Readme file on the repo.';
 
 // Sigma Order: ghost > goblin > skeleton > poltergeist > mummy > vampire > (ghost again)
-var teamNames = ['Team 1', 'Team 2', 'Team 3'];
+var teamNames = ['Team 1', 'Team 2', 'Team 3', 'Team 4'];
 
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex ;
@@ -148,7 +145,7 @@ $(document).ready(function() {
 		shuffle(classArray);
 
 		for(var i = 0; i < selectedNumber; i++){
-			var appendedDiv = "<div class='group' id='group" + i + "'><h2>" + teamNames[i] + "</h2></div>";
+			var appendedDiv = "<div class='group' id='group" + i + "'><h2>" + (teamNames[i] || "no team name") + "</h2></div>";
 			$('.groupContainer').append(appendedDiv);
 		}
 
